@@ -18,7 +18,8 @@
     class Migration(migrations.Migration):
 
         dependencies = [
-            ('quran', '0001_initial'), # Replace '0001_initial' with the name of your previous migration file
+            # THIS IS THE CORRECTED LINE - It now points to the previous migration file
+            ('quran', '0002_remove_verse_word_by_word_alter_verse_tafsir_text'), 
         ]
 
         operations = [
