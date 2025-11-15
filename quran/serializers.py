@@ -1,8 +1,8 @@
-        from rest_framework import serializers
-        from .models import Verse
+from rest_framework import serializers
+from .models import Verse
 
-        class VerseSerializer(serializers.ModelSerializer):
-            class Meta:
-                model = Verse
-                fields = '__all__'
+class VerseSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Verse
+        fields = '__all__'
         
