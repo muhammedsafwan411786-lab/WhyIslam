@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import Verse
+from .serializers import VerseSerializer
 
-# Create your views here.
+class VerseList(generics.ListAPIView):
+    queryset = Verse.objects.all()
+    serializer_class = VerseSerializer
+        
